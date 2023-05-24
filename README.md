@@ -1,1 +1,1 @@
-It's literally tiktac toe lol
+It's literally tictac toe lol
