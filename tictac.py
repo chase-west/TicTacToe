@@ -1,3 +1,4 @@
+import random
 
 currentPlayer = "X"
 winner = None
@@ -72,12 +73,27 @@ def switchPlayer():
         currentPlayer = "X"
 
 
+#create player to fight against
+def player(board):
+    for i in range(random.randint(0, 9)):
+        if board[i] == '-' and currentPlayer == 'O':
+            board[i] = 'O'
+            break
+            switchPlayer()
+        #elif board[i] != '-' and currentPlayer == 'O'
+        
+
+
+
+
+
 while gameRunning:
     printBoard(board)
     playerInput(board)
     checkTie(board)
     checkWin()
     switchPlayer()
+    player(board)
     if winner != None:
         printBoard(board)
         break
