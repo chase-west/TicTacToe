@@ -73,18 +73,23 @@ def switchPlayer():
         currentPlayer = "X"
 
 
+def checkOpen(board):
+    open = {}
+    l, r = board[0], len(board - 1)
+
+
+
+
+
 #create player to fight against
 def player(board):
-    for i in range(random.randint(0, 9)):
+    for i in range(random.randint(checkOpen)):
         if board[i] == '-' and currentPlayer == 'O':
             board[i] = 'O'
-            break
             switchPlayer()
-        #elif board[i] != '-' and currentPlayer == 'O'
+            break
+
         
-
-
-
 
 
 while gameRunning:
