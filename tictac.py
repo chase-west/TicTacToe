@@ -35,8 +35,8 @@ def checkHorizontal(board):
 
 def checkRows(board):
     global winner
-    for i in range(0, 3, 9):
-        if board[i] == board[i + 4] == board[i + 8] and board[i] != "-":
+    for i in range(3):
+        if board[i] == board[i + 3] == board[i + 6] and board[i] != "-":
             winner = board[i]
             return True
 
