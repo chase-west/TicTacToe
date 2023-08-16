@@ -1,1 +1,1 @@
-It's literally tictac toe lol
+Tic Tac Toe game to get better at python fundamentals 
